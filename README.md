@@ -4,9 +4,9 @@ Welcome to the Kiro + Laravel Skeleton Template.
 
 ## Introduction
 
-This repository is a fully-formed Laravel starter built from the experience of creating a real-world application with Kiro. Kiro provides a strong foundation for beginning a Laravel project, but it doesn’t include the steering documents or build-system structure that teams rely on when spinning up a production-ready workspace. This template fills that gap.
+This repository is a fully-formed Laravel starter built from the experience of creating a real-world application with Kiro. Kiro provides a strong foundation for beginning any project, but  the steering documents and build-system structure included in this template provide a production-ready workspace to get your project started on the right foot. You don't have to fuss with the toolkit. You just start building.
 
-You get a complete development environment powered by DDEV, a working Vite setup with hot-module reloading, and a set of guiding documents that help shape conventions, workflows, and team collaboration from day one. Using this template saves at least an hour of initial setup time compared to assembling all of these pieces manually. It provides a consistent, fast, and opinionated starting point so you can focus on building features instead of wiring the project together.
+You start your project with a complete development environment powered by DDEV, a working Vite setup with hot-module reloading, and a set of guiding documents that help shape conventions, workflows, and team collaboration from day one. Using this template saves at least an hour of initial setup time compared to assembling all of these pieces manually. It provides a consistent, fast, and opinionated starting point so you can focus on building features instead of wiring the project together.
 
 
 ## Features

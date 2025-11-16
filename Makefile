@@ -1,3 +1,8 @@
+.PHONY: setup
+
+setup:
+	ddev composer run setup
+
 .PHONY: dev
 
 dev:

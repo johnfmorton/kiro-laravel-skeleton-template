@@ -441,6 +441,210 @@ class OrderService
 }
 ```
 
+## Blade Templating Best Practices
+
+### Component Syntax
+Use Blade's component syntax (`<x-component />`) for reusable UI elements:
+
+```blade
+{{-- Anonymous component (resources/views/components/alert.blade.php) --}}
+<x-alert type="error" :message="$message" />
+
+{{-- Class-based component --}}
+<x-inputs.button type="submit">Save</x-inputs.button>
+
+{{-- Component with slots --}}
+<x-card>
+    <x-slot:header>
+        Card Title
+    </x-slot:header>
+    
+    Card content goes here
+    
+    <x-slot:footer>
+        <button>Action</button>
+    </x-slot:footer>
+</x-card>
+```
+
+### Layout Inheritance
+Use `@extends` and `@section` for layout inheritance:
+
+```blade
+{{-- resources/views/layouts/app.blade.php --}}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@yield('title', 'Default Title')</title>
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    </head>
+    <body>
+        <x-header />
+        
+        @isset($header)
+            <header>{{ $header }}</header>
+        @endisset
+        
+        <main>
+            @yield('content')
+        </main>
+        
+        <x-footer />
+        
+        @stack('scripts')
+    </body>
+</html>
+
+{{-- resources/views/pages/home.blade.php --}}
+@extends('layouts.app')
+
+@section('title', 'Home Page')
+
+@section('content')
+    <h1>Welcome</h1>
+@endsection
+
+@push('scripts')
+    <script src="/js/home.js"></script>
+@endpush
+```
+
+### Include vs Components
+Use `@include` for simple partials, components for reusable UI with logic:
+
+```blade
+{{-- Simple include (no logic) --}}
+@include('components.favicon')
+@include('partials.sidebar', ['user' => $user])
+
+{{-- Component (with logic, attributes, slots) --}}
+<x-alert type="success" />
+<x-user-card :user="$user" />
+```
+
+### Conditional Rendering
+Use Blade directives for clean conditionals:
+
+```blade
+@auth
+    <p>Welcome, {{ auth()->user()->name }}</p>
+@endauth
+
+@guest
+    <a href="/login">Login</a>
+@endguest
+
+@if($user->isAdmin())
+    <x-admin-panel />
+@elseif($user->isModerator())
+    <x-moderator-panel />
+@else
+    <x-user-panel />
+@endif
+
+@unless($user->isSubscribed())
+    <x-subscription-banner />
+@endunless
+
+@empty($posts)
+    <p>No posts found</p>
+@endempty
+```
+
+### Loops and Iteration
+Use `@foreach`, `@forelse` for clean iteration:
+
+```blade
+@forelse($users as $user)
+    <x-user-card :user="$user" />
+@empty
+    <p>No users found</p>
+@endforelse
+
+@foreach($items as $item)
+    <div class="{{ $loop->first ? 'first' : '' }} {{ $loop->last ? 'last' : '' }}">
+        {{ $item->name }}
+    </div>
+@endforeach
+```
+
+### Data Escaping
+Always escape output unless you explicitly trust the content:
+
+```blade
+{{-- Escaped (safe) --}}
+{{ $user->name }}
+{{ $user->bio }}
+
+{{-- Unescaped (dangerous - only for trusted content) --}}
+{!! $trustedHtml !!}
+
+{{-- Raw output in attributes --}}
+<div data-user="{{ $user->toJson() }}"></div>
+```
+
+### Component Attributes
+Use attribute bags for flexible component APIs:
+
+```blade
+{{-- resources/views/components/button.blade.php --}}
+<button {{ $attributes->merge(['type' => 'button', 'class' => 'btn']) }}>
+    {{ $slot }}
+</button>
+
+{{-- Usage --}}
+<x-button type="submit" class="btn-primary">Save</x-button>
+{{-- Renders: <button type="submit" class="btn btn-primary">Save</button> --}}
+```
+
+### Vite Asset Loading
+Use `@vite` directive for asset bundling:
+
+```blade
+{{-- Load CSS and JS --}}
+@vite(['resources/css/app.css', 'resources/js/app.js'])
+
+{{-- Load specific page assets --}}
+@vite(['resources/js/pages/dashboard.js'])
+```
+
+### CSRF Protection
+Always include CSRF token in forms:
+
+```blade
+<form method="POST" action="/users">
+    @csrf
+    {{-- or --}}
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+</form>
+
+{{-- Method spoofing for PUT/PATCH/DELETE --}}
+<form method="POST" action="/users/1">
+    @csrf
+    @method('PUT')
+</form>
+```
+
+### Error Handling
+Display validation errors cleanly:
+
+```blade
+@error('email')
+    <span class="error">{{ $message }}</span>
+@enderror
+
+{{-- All errors --}}
+@if($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+```
+
 ## Laravel Package Development Best Practices
 
 When developing reusable components:

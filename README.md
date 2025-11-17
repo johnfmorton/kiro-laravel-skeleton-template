@@ -23,9 +23,8 @@ Since the project uses DDEV for local enviroment of your Laravel project, you'll
 
 1. **Clone the repo**: `git clone <https://github.com/johnfmorton/kiro-laravel-skeleton.git> your-project-name`
 2. **Navigate to the directory**: `cd your-project-name`
-3. **Start DDEV**: `ddev start`
-4. **Run initial setup**: `make setup` (installs dependencies, generates app key, runs migrations, builds assets)
-5. **Start development**: `make dev` (launches browser, runs migrations, starts Vite dev server)
+3. **Run initial setup**: `make setup` (installs dependencies, generates app key, runs migrations, builds assets)
+4. **Start development**: `make dev` (launches browser, runs migrations, starts Vite dev server)
 
 That's it! Your Laravel app will be running at the URL shown by DDEV (typically `https://your-project-name.ddev.site`).
 
@@ -34,7 +33,6 @@ That's it! Your Laravel app will be running at the URL shown by DDEV (typically 
 After initial setup, just run:
 
 ```bash
-ddev start    # Start the DDEV environment
 make dev      # Launch your development environment
 ```
 

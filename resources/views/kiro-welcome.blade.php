@@ -57,9 +57,46 @@
                   </p>
                 </div>
 
-                <div class="space-y-3 rounded-2xl border border-dashed border-slate-600/80 bg-slate-950/90 px-3.5 py-3 text-xs text-slate-200 sm:text-[0.8rem]">
+                <div class="space-y-3 rounded-2xl border border-dashed border-emerald-600/80 bg-emerald-950/30 px-3.5 py-3 text-xs text-slate-200 sm:text-[0.8rem]">
+                  <p class="font-medium text-emerald-100">
+                    🎯 Recommended first step: Define your app with Kiro
+                  </p>
+                  <div class="space-y-2 text-slate-200">
+                    <p>
+                      Before diving into code, describe what you're building. Open the Kiro panel and create a new spec that outlines your app's features, requirements, and architecture.
+                    </p>
+                    <div class="rounded-lg border border-emerald-600/50 bg-slate-950/80 px-3 py-2">
+                      <p class="mb-1.5 text-[0.7rem] font-medium uppercase tracking-wider text-emerald-300">
+                        How to start:
+                      </p>
+                      <ol class="space-y-1 text-[0.78rem]">
+                        <li class="flex items-start gap-2">
+                          <span class="mt-[3px] font-bold text-emerald-400">1.</span>
+                          <span>Open the Kiro Specs section in your IDE sidebar</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="mt-[3px] font-bold text-emerald-400">2.</span>
+                          <span>Create a new spec describing your app's purpose and features</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="mt-[3px] font-bold text-emerald-400">3.</span>
+                          <span>Let Kiro help you iterate on requirements and design</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="mt-[3px] font-bold text-emerald-400">4.</span>
+                          <span>Generate implementation tasks and start building</span>
+                        </li>
+                      </ol>
+                    </div>
+                    <p class="text-[0.75rem] italic text-slate-300">
+                      This structured approach helps you think through your app before writing code, making development faster and more focused.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="space-y-2 rounded-2xl border border-slate-600/80 bg-slate-950/90 px-3.5 py-3 text-xs text-slate-200 sm:text-[0.8rem]">
                   <p class="font-medium text-slate-100">
-                    Jump in by editing these files:
+                    Or jump straight into code by editing:
                   </p>
                   <ul class="grid gap-1.5 sm:grid-cols-2">
                     <li class="flex items-start gap-2">
@@ -91,21 +128,6 @@
                       </span>
                     </li>
                   </ul>
-                </div>
-
-                <div class="flex flex-wrap gap-2 pt-1">
-                  <div class="inline-flex items-center gap-2 rounded-full bg-sky-500 px-3 py-1.5 text-xs font-medium text-slate-950 shadow-md shadow-sky-500/40">
-                    <span>Suggested first move:</span>
-                    <code class="rounded bg-sky-600/80 px-1.5 py-[1px] text-[0.72rem]">
-                      return view('welcome');
-                    </code>
-                  </div>
-                  <div class="inline-flex items-center gap-2 rounded-full border border-slate-600/80 bg-slate-950/80 px-3 py-1.5 text-[0.75rem] text-slate-300">
-                    <span class="rounded bg-slate-900 px-1.5 py-[1px] font-mono text-[0.7rem] text-sky-300">
-                      php artisan route:list
-                    </span>
-                    <span class="text-slate-400">to inspect your HTTP surface</span>
-                  </div>
                 </div>
               </div>
             </div>

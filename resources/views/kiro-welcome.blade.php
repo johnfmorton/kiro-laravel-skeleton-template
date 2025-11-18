@@ -302,6 +302,19 @@
 
                 <li>
                   <div class="flex items-center justify-between gap-2">
+                    <span class="font-medium text-slate-50">Mailpit</span>
+                    <span class="rounded-full bg-purple-500/15 px-2 py-[2px] text-[0.65rem] text-purple-300">
+                      Email testing
+                    </span>
+                  </div>
+                  <p class="text-xs text-slate-400">
+                    Run <code class="rounded bg-slate-950 px-1.5 py-[1px] text-[0.72rem] text-purple-300">ddev mailpit</code> to open the email testing interface.<br />
+                    Catch and inspect all outgoing emails during development.
+                  </p>
+                </li>
+
+                <li>
+                  <div class="flex items-center justify-between gap-2">
                     <span class="font-medium text-slate-50">Laravel starter kits</span>
                     <span class="rounded-full bg-emerald-500/15 px-2 py-[2px] text-[0.65rem] text-emerald-300">
                       Auth

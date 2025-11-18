@@ -5,11 +5,7 @@
         <!-- Header -->
         <header class="flex flex-col gap-4 border-b border-slate-800/80 bg-slate-950/80 px-5 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-7">
           <div class="flex items-center gap-3">
-            <div class="h-10 w-10 rounded-2xl bg-linear-to-tr from-sky-400 via-emerald-400 to-violet-500 p-[2px] shadow-lg shadow-sky-500/40">
-              <div class="flex h-full w-full items-center justify-center rounded-[0.9rem] bg-slate-950/95 text-xs font-semibold tracking-[0.18em] text-slate-100">
-                KΛ
-              </div>
-            </div>
+            <img src="{{ asset('kl-logo-2x.png') }}" alt="Kiro Laravel Logo" class="h-12 w-12" />
             <div>
               <h1 class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-100">
                 Kiro Laravel Skeleton
@@ -63,7 +59,7 @@
                   </p>
                   <div class="space-y-2 text-slate-200">
                     <p>
-                      Before diving into code, describe what you're building. Open the Kiro panel and create a new spec that outlines your app's features, requirements, and architecture.
+                      Before diving into code, describe what you're building. Open the Kiro panel and create a new spec that outlines your app's features, requirements, and architecture. For detailed instructions, see the <a href="https://kiro.dev/docs/specs/" class="underline" target="_blank">Kiro spec documentation.</a>
                     </p>
                     <div class="rounded-lg border border-emerald-600/50 bg-slate-950/80 px-3 py-2">
                       <p class="mb-1.5 text-[0.7rem] font-medium uppercase tracking-wider text-emerald-300">
@@ -339,7 +335,7 @@
             <!-- Makefile / tooling hint (optional content) -->
             <section class="rounded-2xl border border-slate-700/70 bg-slate-900/80 px-4 py-3.5 sm:px-5">
               <p class="text-xs leading-relaxed text-slate-300">
-                Your workspace likely includes helpful
+                Your workspace includes helpful
                 <span class="font-mono text-[0.7rem] text-sky-300">make</span>
                 commands for routine tasks (starting services, running tests, refreshing databases).
                 Run

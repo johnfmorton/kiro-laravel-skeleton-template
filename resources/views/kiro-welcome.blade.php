@@ -1,11 +1,11 @@
 <x-app-layout>
     <x-slot name="heaader">named header slot</x-slot>
         <div class="mx-auto flex min-h-screen max-w-5xl items-stretch px-4 py-8 sm:px-6 lg:px-10">
-      <div class="flex w-full flex-col rounded-3xl border border-slate-700/60 bg-slate-950/80 shadow-2xl shadow-slate-950/80">
+      <div class="flex w-full flex-col rounded-3xl border border-slate-700/60 bg-slate-950/80 shadow-2xl shadow-slate-950/80 overflow-hidden">
         <!-- Header -->
         <header class="flex flex-col gap-4 border-b border-slate-800/80 bg-slate-950/80 px-5 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-7">
           <div class="flex items-center gap-3">
-            <div class="h-10 w-10 rounded-2xl bg-gradient-to-tr from-sky-400 via-emerald-400 to-violet-500 p-[2px] shadow-lg shadow-sky-500/40">
+            <div class="h-10 w-10 rounded-2xl bg-linear-to-tr from-sky-400 via-emerald-400 to-violet-500 p-[2px] shadow-lg shadow-sky-500/40">
               <div class="flex h-full w-full items-center justify-center rounded-[0.9rem] bg-slate-950/95 text-xs font-semibold tracking-[0.18em] text-slate-100">
                 KΛ
               </div>

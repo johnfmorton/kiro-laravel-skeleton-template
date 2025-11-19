@@ -33,66 +33,69 @@ inclusion: always
 - Faker for test data generation
 - Mockery for mocking in tests
 
+## ⚠️ IMPORTANT: This Project Uses DDEV
+
+**ALL commands must be prefixed with `ddev`. Never use `php`, `composer`, or `npm` directly.**
+
 ## Common Commands
 
 ### Setup
 ```bash
-composer run setup
+ddev composer run setup
 ```
 Installs dependencies, generates app key, runs migrations, and builds assets.
 
 ### Development
 ```bash
-composer run dev
+ddev composer run dev
 ```
 Starts Laravel server, queue worker, log viewer, and Vite dev server concurrently.
 
 Or run services individually:
 ```bash
-php artisan serve          # Start development server
-npm run dev                # Start Vite dev server
-php artisan queue:listen   # Start queue worker
-php artisan pail           # View logs
+ddev artisan serve          # Start development server (NOT php artisan serve)
+ddev npm run dev            # Start Vite dev server (NOT npm run dev)
+ddev artisan queue:listen   # Start queue worker
+ddev artisan pail           # View logs
 ```
 
 ### Testing
 ```bash
-composer run test
+ddev composer run test
 # or
-php artisan test
+ddev artisan test
 ```
 
 ### Code Style
 ```bash
-./vendor/bin/pint
+ddev exec ./vendor/bin/pint
 ```
 
 ### Database
 ```bash
-php artisan migrate              # Run migrations
-php artisan migrate:fresh        # Drop all tables and re-run migrations
-php artisan db:seed              # Run database seeders
-php artisan migrate:fresh --seed # Fresh migration with seeding
+ddev artisan migrate              # Run migrations
+ddev artisan migrate:fresh        # Drop all tables and re-run migrations
+ddev artisan db:seed              # Run database seeders
+ddev artisan migrate:fresh --seed # Fresh migration with seeding
 ```
 
-### DDEV Commands
+### DDEV Environment
 ```bash
 ddev start          # Start DDEV environment
 ddev stop           # Stop DDEV environment
 ddev restart        # Restart DDEV environment
 ddev ssh            # SSH into web container
-ddev composer       # Run Composer commands
-ddev artisan        # Run Artisan commands
+ddev describe       # Show project details
 ddev snapshot       # Create database snapshot
 ```
 
 ### Cache Management
 ```bash
-php artisan config:cache   # Cache configuration
-php artisan config:clear   # Clear configuration cache
-php artisan route:cache    # Cache routes
-php artisan route:clear    # Clear route cache
-php artisan view:cache     # Cache views
-php artisan view:clear     # Clear view cache
-php artisan cache:clear    # Clear application cache
+ddev artisan config:cache   # Cache configuration
+ddev artisan config:clear   # Clear configuration cache
+ddev artisan route:cache    # Cache routes
+ddev artisan route:clear    # Clear route cache
+ddev artisan view:cache     # Cache views
+ddev artisan view:clear     # Clear view cache
+ddev artisan cache:clear    # Clear application cache
 ```

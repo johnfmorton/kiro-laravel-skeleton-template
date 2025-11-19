@@ -4,6 +4,18 @@ inclusion: always
 
 # DDEV Local Development Environment
 
+## 🚨 MANDATORY: This is a DDEV Project
+
+**Every command in this project MUST use the `ddev` prefix. There are NO exceptions.**
+
+When suggesting commands to the user, you MUST:
+1. Always prefix with `ddev` (e.g., `ddev artisan`, `ddev composer`, `ddev npm`)
+2. Never suggest `php artisan serve` - use `ddev artisan serve` or `ddev composer dev`
+3. Never suggest `npm install` or `npm run` - use `ddev npm install` or `ddev npm run`
+4. Never suggest `composer install` - use `ddev composer install`
+
+If you catch yourself about to suggest a command without `ddev`, STOP and add the `ddev` prefix.
+
 ## Environment Configuration
 
 This project uses DDEV for local development with the following configuration:
@@ -15,9 +27,22 @@ This project uses DDEV for local development with the following configuration:
 - Composer: Version 2
 - Project URL: https://kiro-laravel-ddev-skeleton-template.ddev.site
 
-## Critical: Command Execution
+## ⚠️ CRITICAL: Command Execution Rules
 
-**ALL commands must be executed inside the DDEV container using the `ddev` prefix.**
+**THIS PROJECT USES DDEV. ALL COMMANDS MUST BE EXECUTED INSIDE THE DDEV CONTAINER.**
+
+**NEVER suggest or use these commands:**
+- ❌ `php artisan ...` (use `ddev artisan ...` instead)
+- ❌ `composer ...` (use `ddev composer ...` instead)
+- ❌ `npm ...` (use `ddev npm ...` instead)
+- ❌ `php ...` (use `ddev exec php ...` instead)
+- ❌ `./vendor/bin/...` (use `ddev exec ./vendor/bin/...` instead)
+
+**ALWAYS prefix commands with `ddev`:**
+- ✅ `ddev artisan ...`
+- ✅ `ddev composer ...`
+- ✅ `ddev npm ...`
+- ✅ `ddev exec ...`
 
 ### Artisan Commands
 Always use `ddev artisan` instead of `php artisan`:

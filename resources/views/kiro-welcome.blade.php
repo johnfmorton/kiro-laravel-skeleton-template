@@ -18,7 +18,7 @@
 
           <div class="flex flex-wrap items-center gap-3">
             <div class="inline-flex items-center gap-2 rounded-full border border-emerald-400/70 bg-emerald-500/15 px-3 py-1 text-xs font-medium text-emerald-100 shadow-md shadow-emerald-500/30">
-              <span class="inline-block h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(74,222,128,0.9)]"></span>
+              <span class="inline-block h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(74,222,128,0.9)] animate-pulse"></span>
               Dev environment is live
             </div>
             <span class="hidden text-[11px] uppercase tracking-[0.18em] text-slate-500 sm:inline">
@@ -36,20 +36,14 @@
               <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(56,189,248,0.20),_transparent_55%)]"></div>
 
               <div class="relative flex flex-col gap-4">
-                <div class="inline-flex items-center gap-2 rounded-full border border-slate-600/80 bg-slate-950/80 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-slate-300">
-                  <span class="flex h-4 w-4 items-center justify-center rounded-full bg-sky-500/15 text-[0.6rem] text-sky-300">
-                    ⚡
-                  </span>
-                  You’re ready to build
-                </div>
 
                 <div class="space-y-2">
                   <h2 class="text-xl font-semibold text-slate-50 sm:text-2xl">
-                    Clean slate. Fast stack. Your app starts here.
+                    Time to create something great.
                   </h2>
                   <p class="text-sm leading-relaxed text-slate-300 sm:text-[0.95rem]">
                     Laravel, DDEV, Vite, and Tailwind are already configured and running.
-                    No boilerplate slog, no environment wrestling. Focus on features, not setup.
+                    No boilerplate slog, no environment wrestling. You can focus on your app, not setup.
                   </p>
                 </div>
 
@@ -132,15 +126,12 @@
             <div class="rounded-2xl border border-slate-700/70 bg-slate-900/80 p-4 sm:p-5">
               <div class="mb-3 flex items-center justify-between gap-2">
                 <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-100">
-                  Next steps in your app
+                  Laravel overview
                 </h3>
-                <span class="rounded-full bg-slate-950/80 px-2.5 py-1 text-[0.7rem] uppercase tracking-[0.18em] text-slate-400">
-                  Choose a direction
-                </span>
               </div>
 
               <p class="mb-3 text-sm leading-relaxed text-slate-300">
-                The skeleton keeps opinions light so you can be decisive. Pick a lane and start coding:
+                Here are some basic tips on understanding the structure of your Laravel app and where to go from here.
               </p>
 
               <ul class="space-y-2 text-sm text-slate-200">

@@ -213,6 +213,21 @@
               <ul class="space-y-2.5 text-sm">
                 <li>
                   <div class="flex items-center justify-between gap-2">
+                    <span class="font-medium text-slate-50">Kiro docs</span>
+                    <span class="rounded-full bg-purple-500/15 px-2 py-[2px] text-[0.65rem] text-purple-300">
+                      AI IDE
+                    </span>
+                  </div>
+                  <p class="text-xs text-slate-400">
+                    <a href="https://kiro.dev/docs" target="_blank" rel="noreferrer" class="text-sky-300 hover:text-sky-200 hover:underline">
+                      https://kiro.dev/docs
+                    </a><br />
+                    Specs, hooks, steering, and AI-powered development workflows.
+                  </p>
+                </li>
+
+                <li>
+                  <div class="flex items-center justify-between gap-2">
                     <span class="font-medium text-slate-50">Laravel docs</span>
                     <span class="rounded-full bg-emerald-500/15 px-2 py-[2px] text-[0.65rem] text-emerald-300">
                       Framework

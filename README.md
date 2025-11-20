@@ -1,12 +1,19 @@
-# Kiro + Laravel Skeleton Template
+<p align="center">
+  <img src="kiro-laravel-skeleton-logo.png" alt="Kiro Laravel Skeleton Logo" style="width: 30%; max-width: 150px;">
+</p>
 
-Welcome to the Kiro + Laravel Skeleton Template.
+# Kiro Laravel Skeleton
+
+Build smarter with [Kiro](https://kiro.dev/ "Kiro homepage") and [Laravel](https://laravel.com "Laravel homepage") together: a clean, consistent starting point for any new project.
 
 ## Introduction
 
-This repository is a fully-formed Laravel starter built from the experience of creating a real-world application with Kiro. Kiro provides a strong foundation for beginning any project, but  the steering documents and build-system structure included in this template provide a production-ready workspace to get your project started on the right foot. You don't have to fuss with the toolkit. You just start building.
+The **Kiro Laravel Skeleton** is preconfigured Laravel environment designed to turn Kiro output into profession-level code with minimal setup friction.
 
-You start your project with a complete development environment powered by DDEV, a working Vite setup with hot-module reloading, and a set of guiding documents that help shape conventions, workflows, and team collaboration from day one. Using this template saves at least an hour of initial setup time compared to assembling all of these pieces manually. It provides a consistent, fast, and opinionated starting point so you can focus on building features instead of wiring the project together.
+This template makes building a Laravel app with Kiro simple. Kiro gives you the structure to design your app, and this skeleton turns that structure into a working Laravel project the moment you clone it. DDEV, Vite, Tailwind CSS, Mailpit, and hot-module reloading are already wired together, so you can focus on implementation instead of configuration.
+
+It also includes production-tested steering documents shaped by real-world Laravel development. These documents translate Kiro’s planning into consistent conventions, solid architecture, and clear workflows—making it easier to write maintainable code from day one.
+
 
 ## Features
 
@@ -17,7 +24,7 @@ You start your project with a complete development environment powered by DDEV, 
 
 ## DDEV Requirements
 
-Since the project uses DDEV for local enviroment of your Laravel project, you'll need to reference the [DDEV getting started section](https://ddev.com/get-started/) of the documenation. You'll find instructions for Mac, Windows and Linux. Basically, you'll need to be able to install Docker images, and, depending on your platform, a way for local URLs to resolve.
+Since the project uses DDEV for local enviroment of your Laravel project, you'll need to have DDEV installed on your development machine. See the [DDEV getting started section](https://ddev.com/get-started/) of the documenation for instructions for Mac, Windows and Linux. Basically, you'll need to be able to install Docker images, and, depending on your platform, a way for local URLs to resolve.
 
 ### Automatic DDEV Validation
 

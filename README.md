@@ -6,6 +6,8 @@
 
 Build smarter with [Kiro](https://kiro.dev/ "Kiro homepage") and [Laravel](https://laravel.com "Laravel homepage") together: a clean, consistent starting point for any new project.
 
+![Kiro Laravel Skeleton Screenshot](kiro-laravel-skeleton-screenshotpng.jpg)
+
 ## Introduction
 
 The **Kiro Laravel Skeleton** is preconfigured Laravel environment designed to turn Kiro output into profession-level code with minimal setup friction.

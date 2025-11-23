@@ -48,6 +48,8 @@ If any issues are detected, you'll receive clear error messages with specific tr
 4. **Start development**: `make dev` (automatically checks DDEV, then launches browser, runs migrations, starts Vite dev server)
 5. **Create your Kiro specs**: open your project in Kiro, create specs for your project, and begin building your app
 
+![Build your app's specs in Kiro](kiro-build-your-specs.jpg)
+
 Your Laravel app will be running at the URL shown by DDEV (typically `https://your-project-name.ddev.site`).
 
 **First-time users**: If you don't have DDEV installed, `make setup` will detect this and provide installation instructions with platform-specific commands.

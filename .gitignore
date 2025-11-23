@@ -26,3 +26,4 @@ Thumbs.db
 # Template development files (not for template users)
 /.kiro/specs/ddev-installation-check/
 /tests/makefile-tests.sh
+screenshots/*.psd

@@ -1,1 +1,1 @@
-<link rel="icon" type="image/png" href="{{ asset('kl-logo-2x.png') }}" />
+<link rel="icon" type="image/png" href="{{ asset('favicon.png') }}" />

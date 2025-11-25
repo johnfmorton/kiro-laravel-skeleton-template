@@ -5,7 +5,7 @@
         <!-- Header -->
         <header class="flex flex-col gap-4 border-b border-slate-800/80 bg-slate-950/80 px-5 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-7">
           <div class="flex items-center gap-3">
-            <img src="{{ asset('kl-logo-2x.png') }}" alt="Kiro Laravel Logo" class="h-12 w-12" />
+            <img src="{{ asset('favicon.png') }}" alt="Kiro Laravel Logo" class="h-12 w-12" />
             <div>
               <h1 class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-100">
                 Kiro Laravel Skeleton
